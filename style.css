@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  width: 100%;
+  background-color: orangered;
+  height: 80px;
+}
+
+header {
+  height: 400px;
+  background-color: aquamarine;
+}
+#animationtxt {
+  /*#=id*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
+  color: blueviolet;
+  font-size: 150px;
+}
+#div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  color: green;
+  font-size: 150px;
+}
+#div3 {
+  grid-area: 3 / 1 / 4 / 2;
+  justify-self: end;
+  color: blueviolet;
+  font-size: 150px;
+}
+#div4 {
+  grid-area: 4 / 1 / 5 / 2;
+  justify-self: start;
+  color: green;
+  font-size: 150px;
+}
+#div5 {
+  grid-area: 5 / 1 / 6 / 2;
+  justify-self: end;
+  color: blueviolet;
+  font-size: 150px;
+}
+/*
+.d_g {
+  color: blueviolet;
+  font-size: 150px;
+}
+.g_d {
+  color: green;
+  font-size: 150px;
+}
+*/
+
+.titre{
+  width: 100%;
+  border-radius: 10px;
+  display: grid;   
+
+}
+
+.cartouche{
+  background-color: brown;
+  width: 500px;
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+  justify-self: center;
+  margin-bottom: 140px;
+}
+
+.titre h2 {
+  text-align: center;
+ 
+}
+/* .recette{
+  border: solid 4px slateblue;
+  border-radius: 6px;
+} */
+.recette {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 75px);
+  grid-column-gap: 20px;
+  grid-row-gap: 8px;
+  border: solid 4px seagreen;
+  border-radius: 20px;
+  margin: 4rem;
+}
+
+
+  
+  .image { 
+    grid-area: 1 / 1 / 4 / 3; 
+   
+  }
+  img {
+    height: 250px;
+    width: auto;
+    padding-top: 20px;
+    margin-left: -50px;
+  }
+
+  #img2 {
+    height: 300px;
+    width: auto;
+    padding-top: 0px;
+    margin-left: -50px;
+    margin-bottom: 50px;
+  }
+  #img3 {
+    height: 350px;
+    width: auto;
+    padding-top: 0px;
+    margin-left: -50px;
+    margin-top :-15px;
+
+      
+  
+  }
+  .titre { grid-area: 1 / 3 / 2 / 7; }
+  .description { grid-area: 2 / 3 / 3 / 7; }
+  .tag { grid-area: 3 / 3 / 4 / 4; 
+    
+      font-family: 'poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+      text-align: center;
+      font-style:normal;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      background-color: #4A8B75;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      padding: 10px;
+      border-style: none;
+      
+      
+      }
+  .tag2 { grid-area: 3 / 4 / 4 / 5; }
+  .vide { grid-area: 3 / 5 / 4 / 6; }
+  .voir_plus { 
+    grid-area: 3 / 6 / 4 / 7; 
+
+
+}
+
+  .plus{
+    text-decoration:underline;
+    border: none;
+    background:none;
+    font-weight: bold;
+
+  }
